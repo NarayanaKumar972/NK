@@ -1,0 +1,42 @@
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+.input-field {
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.container {
+    height: 360px;
+    width: 520px;
+    margin-left: 500px;
+   border: 2px solid black;
+}
+
+.bottom-container {
+    margin-top: 240px;
+}
+
+.content {
+    margin-left: 10px;
+}
+.todo {
+    border: 1px solid black;
+}
