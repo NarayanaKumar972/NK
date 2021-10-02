@@ -1,24 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="container">
-<div class="top-container" style="max-width:400px">
-    <div class="input-icons">
-        <i class="fa fa-search icon"></i>
-        <input class="input-field" type="text" placeholder="Search">
-    </div>
-    <div>
-        <i class="fa fa-plus icon"></i>
-    </div>
-</div>
-<hr color= "black">
-<div class="todo">
-    test
-</div>
-<div class="bottom-container">
-    <div class="line">
-        <hr color= "black">
-    </div>
-    <div class="content">
-        content
-    </div>
-</div>
+<div id="container">
+    <h1>To-Do List  <i class="fa fa-plus"></i></h1><input placeholder="Add New Todo" [(ngModel)]="item"><i class="fa fa-save save" (click)="onSave()"></i>
+    <ul *ngFor="let item of items">
+        <li *ngIf ="item.isCompleted"><span><i class="fa fa-trash" (click) = "onDel(item)"></i></span>{{item.name}}</li>
+    </ul>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total tasks {{this.items.length}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Completed tasks {{this.count}}</h2>
 </div>
